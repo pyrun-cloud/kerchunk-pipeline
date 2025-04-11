@@ -9,11 +9,23 @@ name: base
 channels:
   - conda-forge
 dependencies:
-  - python=3.12
+  - python==3.8
+  - git
   - ipykernel
   - ipywidgets
-  - git
-
-  # Dask packages
+  - fsspec
+  - matplotlib
+  - numpy
+  - tqdm
+  - xarray
+  - h5py<3.2
+  - zarr
   - dask
   - dask-cloudprovider
+  - ujson
+  - hvplot
+  - kerchunk
+  - pip:
+    - s3fs
+    - numcodecs
+    - adlfs>=0.7.7
