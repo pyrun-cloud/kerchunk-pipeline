@@ -18,3 +18,5 @@ The main content is within the `tutorial.ipynb` Jupyter Notebook. It covers:
 2.  Generating `kerchunk` index files for sample GOES-16 data.
 3.  Using `fsspec` and `xarray` to open the virtual dataset from the generated index.
 4.  Demonstrating the performance benefits.
+
+**Important Note:** Currently, the index generation pipeline demonstrated in this tutorial is designed for local execution. To run the analysis steps in a truly distributed manner using these generated indexes, the resulting JSON files need to be manually uploaded to a shared object store like S3 first.

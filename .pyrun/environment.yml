@@ -10,9 +10,11 @@ channels:
   - conda-forge
 dependencies:
   - python==3.8
-  - git
   - ipykernel
   - ipywidgets
+  - git
+  - dask
+  - dask-cloudprovider
   - fsspec
   - matplotlib
   - numpy
@@ -20,8 +22,6 @@ dependencies:
   - xarray
   - h5py<3.2
   - zarr
-  - dask
-  - dask-cloudprovider
   - ujson
   - hvplot
   - kerchunk
